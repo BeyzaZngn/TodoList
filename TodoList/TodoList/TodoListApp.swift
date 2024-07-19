@@ -11,7 +11,11 @@ import SwiftUI
 struct TodoListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            NavigationView { // Uygulamamızı her zaman bir gezinme görünümüne almak için ListView() i bir NavigationView içine aldık.
+                ListView()
+            }
+          
         }
     }
 }
