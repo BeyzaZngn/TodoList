@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		057307082C4A7F70000465AB /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057307072C4A7F70000465AB /* AddView.swift */; };
+		0573070B2C4A9F04000465AB /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573070A2C4A9F04000465AB /* ItemModel.swift */; };
 		05A58DF32C47E7410091F4F6 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A58DF22C47E7410091F4F6 /* TodoListApp.swift */; };
 		05A58DF72C47E7430091F4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A58DF62C47E7430091F4F6 /* Assets.xcassets */; };
 		05A58DFA2C47E7430091F4F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A58DF92C47E7430091F4F6 /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		057307072C4A7F70000465AB /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		0573070A2C4A9F04000465AB /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		05A58DEF2C47E7410091F4F6 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A58DF22C47E7410091F4F6 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		05A58DF62C47E7430091F4F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		057307092C4A9E9B000465AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0573070A2C4A9F04000465AB /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		05A58DE62C47E7410091F4F6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +65,7 @@
 		05A58DF12C47E7410091F4F6 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				057307092C4A9E9B000465AB /* Models */,
 				05A58E002C4811B70091F4F6 /* Views */,
 				05A58DF22C47E7410091F4F6 /* TodoListApp.swift */,
 				05A58DF62C47E7430091F4F6 /* Assets.xcassets */,
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0573070B2C4A9F04000465AB /* ItemModel.swift in Sources */,
 				057307082C4A7F70000465AB /* AddView.swift in Sources */,
 				05A58DF32C47E7410091F4F6 /* TodoListApp.swift in Sources */,
 				05A58E022C4918DD0091F4F6 /* ListView.swift in Sources */,
