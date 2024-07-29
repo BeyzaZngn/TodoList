@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05367D5D2C5796E200EE7526 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05367D5C2C5796E200EE7526 /* ListViewModel.swift */; };
 		057307082C4A7F70000465AB /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057307072C4A7F70000465AB /* AddView.swift */; };
 		0573070B2C4A9F04000465AB /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573070A2C4A9F04000465AB /* ItemModel.swift */; };
 		05A58DF32C47E7410091F4F6 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A58DF22C47E7410091F4F6 /* TodoListApp.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05367D5C2C5796E200EE7526 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		057307072C4A7F70000465AB /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		0573070A2C4A9F04000465AB /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		05A58DEF2C47E7410091F4F6 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,7 @@
 		05367D5B2C5794D300EE7526 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				05367D5C2C5796E200EE7526 /* ListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				0573070B2C4A9F04000465AB /* ItemModel.swift in Sources */,
 				057307082C4A7F70000465AB /* AddView.swift in Sources */,
+				05367D5D2C5796E200EE7526 /* ListViewModel.swift in Sources */,
 				05A58DF32C47E7410091F4F6 /* TodoListApp.swift in Sources */,
 				05A58E022C4918DD0091F4F6 /* ListView.swift in Sources */,
 				05A58E042C4A7A3C0091F4F6 /* ListRowView.swift in Sources */,
