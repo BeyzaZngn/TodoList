@@ -38,6 +38,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05367D5B2C5794D300EE7526 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		057307092C4A9E9B000465AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				057307092C4A9E9B000465AB /* Models */,
+				05367D5B2C5794D300EE7526 /* ViewModels */,
 				05A58E002C4811B70091F4F6 /* Views */,
 				05A58DF22C47E7410091F4F6 /* TodoListApp.swift */,
 				05A58DF62C47E7430091F4F6 /* Assets.xcassets */,
