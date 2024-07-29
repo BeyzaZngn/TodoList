@@ -13,7 +13,8 @@ struct AddView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
     
-   
+    @State var alertTitle: String = ""
+    @State var showAlert: Bool = false
     
     var body: some View {
         
@@ -41,6 +42,9 @@ struct AddView: View {
             .padding(14)
         }
         .navigationTitle("Add an Item 🖊️")
+        .alert(isPresented: $showAlert, content: {
+            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Alert(title: Text("Alert"))/*@END_MENU_TOKEN@*/
+        })
     }
     
     func saveButtonPressed() {
@@ -53,9 +57,15 @@ struct AddView: View {
     
     func textIsAppropriate() -> Bool {
         if textFieldText.count < 3 {
+            alertTitle = "Your new todo item must be at least 3 characters long！！！😰😨😱"
+            showAlert.toggle()
             return false
         }
         return true
+    }
+    
+    func getAlert() -> Alert {
+        return Alert(title: Text(alertTitle))
     }
 
 }
