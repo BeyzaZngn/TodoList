@@ -13,6 +13,8 @@ struct AddView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
     
+   
+    
     var body: some View {
         
         ScrollView{
@@ -42,8 +44,18 @@ struct AddView: View {
     }
     
     func saveButtonPressed() {
-        listViewModel.addItem(title: textFieldText)
-        presentationMode.wrappedValue.dismiss()
+        
+        if textIsAppropriate() {
+            listViewModel.addItem(title: textFieldText)
+            presentationMode.wrappedValue.dismiss()
+        }
+    }
+    
+    func textIsAppropriate() -> Bool {
+        if textFieldText.count < 3 {
+            return false
+        }
+        return true
     }
 
 }
