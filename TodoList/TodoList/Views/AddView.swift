@@ -42,9 +42,7 @@ struct AddView: View {
             .padding(14)
         }
         .navigationTitle("Add an Item 🖊️")
-        .alert(isPresented: $showAlert, content: {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Alert(title: Text("Alert"))/*@END_MENU_TOKEN@*/
-        })
+        .alert(isPresented: $showAlert, content: getAlert)
     }
     
     func saveButtonPressed() {
@@ -57,7 +55,7 @@ struct AddView: View {
     
     func textIsAppropriate() -> Bool {
         if textFieldText.count < 3 {
-            alertTitle = "Your new todo item must be at least 3 characters long！！！😰😨😱"
+            alertTitle = "Your new todo item must be at least 3 characters long !!!😰😨😱"
             showAlert.toggle()
             return false
         }
