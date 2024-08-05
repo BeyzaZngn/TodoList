@@ -40,6 +40,8 @@ class ListViewModel: ObservableObject {
             let savedItems = try? JSONDecoder ().decode([ItemModel].self, from: data)
         else { return }
         
+        self.items = savedItems
+        
     }
     
     func deleteItem(indexSet: IndexSet) {
